@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="609.0" style="-fx-background-color: b8faff; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+    <children>
+        <AnchorPane prefHeight="34.0" prefWidth="539.0" style="-fx-background-color: #00c7c7; -fx-background-radius: 20;">
+            <children>
+                <Text fill="WHITE" layoutX="182.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Family of bacteria" wrappingWidth="366.13671875">
+                    <font>
+                        <Font name="Impact" size="32.0" />
+                    </font>
+                </Text>
+                  <Button fx:id="dirUnloadButton" layoutX="493.0" layoutY="16.0" minWidth="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #00c7c7;" textFill="WHITE">
+                      <font>
+                          <Font name="Impact" size="14.0" />
+                      </font>
+                      <effect>
+                          <DropShadow />
+                      </effect>
+                  </Button>
+                <Button fx:id="dirLoadButton" layoutX="436.0" layoutY="16.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #00c7c7;" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="14.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+            <Button fx:id="closeButton" layoutX="549.0" layoutY="16.0" minWidth="38.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: #FF6347;" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <AnchorPane layoutY="57.0" prefHeight="17.0" prefWidth="609.0" style="-fx-background-color: #00c7c7;" />
+            </children>
+        </AnchorPane>
+        <Button fx:id="startButton" layoutX="244.0" layoutY="268.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: #00c7c7;" textFill="WHITE" textOverrun="CLIP">
+            <font>
+                <Font name="Impact" size="28.0" />
+            </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Button>
+        <Text fx:id="loadStatusFileNumber" fill="WHITE" layoutX="130.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="397.93658447265625">
+            <font>
+                <Font name="Impact" size="28.0" />
+            </font>
+        </Text>
+      <Text fx:id="loadStatus_end" fill="WHITE" layoutX="66.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="513.13671875">
+         <font>
+            <Font name="Impact" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="numberTSVFile" fill="WHITE" layoutX="33.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="554.7365112304688">
+         <font>
+            <Font name="Impact" size="28.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
